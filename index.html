@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <style>
+        .orange
+        {
+            color : orange;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>calc</title>
+</head>
+<body>
+<!-------------------------------------------------------------------------------------------->
+<div style=" background-color: burlywood ; width: 120px; padding-left: 5px;padding-top: 5px" >
+<div ng-controller="basic-page">
+    <input type="text" id="answer" value="{{number}}" style="width: 80px" disabled="disabled">
+    <input type="text" id="operation" value="{{al}}" style="width: 20px" disabled="disabled">
+    <br>
+    <input type="button" id=" 1 " value="1" class="number" ng-click="num_1()">
+    <input type="button" id=" 2 " value="2" class="number" ng-click="num_2()">
+    <input type="button" id=" 3 " value="3" class="number" ng-click="num_3()">
+    <input type="button" id="multiple" value="*" ng-click="multiple()">
+    <br>
+    <input type="button" id=" 4 " value="4" class="number" ng-click="num_4()">
+    <input type="button" id=" 5 " value="5" class="number" ng-click="num_5()">
+    <input type="button" id=" 6 " value="6" class="number" ng-click="num_6()">
+    <input type="button" id="divide" value="/" ng-click="divide()">
+    <br>
+    <input type="button" id=" 7 " value="7" class="number" ng-click="num_7()">
+    <input type="button" id=" 8 " value="8" class="number" ng-click="num_8()">
+    <input type="button" id=" 9 " value="9" class="number" ng-click="num_9()">
+    <input type="button" id="subscribe" value="-" ng-click="subscribe()">
+    <br>
+    <input type="button" id="c" value="C" style="color: red" ng-click="c()">
+    <input type="button" id=" 0 " value="0" class="number" ng-click="num_0()">
+    <input type="button" id="add" value="+" ng-click="plus()">
+    <input type="button" id="equal" value="=" ng-click="equal()">
+</div>
+</div>
+
+</body>
+</html>
